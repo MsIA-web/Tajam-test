@@ -1,0 +1,17 @@
+@use "../utils/functions" as *;
+@mixin link-button {
+  border: 1px solid #00e0d0;
+  padding: rem(7.5) rem(13);
+  color: #00e0d0;
+  font-weight: 500;
+  font-size: rem(14);
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  &:active {
+    transform: scale(1.05);
+  }
+}
