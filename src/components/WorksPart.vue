@@ -33,7 +33,6 @@
 <style scoped lang="scss">
 @use '/src/assets/utils/functions.scss' as *;
 @use '/src/assets/mixins/links.scss' as *;
-@use '/src/assets/mixins/link-button.scss' as *;
 .works {
  height: rem(734);
  display: flex;

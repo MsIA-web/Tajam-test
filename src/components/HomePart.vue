@@ -18,7 +18,6 @@
 <style scoped lang="scss">
 @use '../assets/utils/functions' as *;
 @use '../assets/mixins/links' as *;
-@use '../assets/mixins/link-button' as *;
 
 .home {
  background: linear-gradient(180deg, rgba(49, 29, 94, 0.85) 0%, rgba(9, 5, 47, 0.85) 100%),

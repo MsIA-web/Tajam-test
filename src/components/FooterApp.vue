@@ -78,7 +78,7 @@
      <a class="footer__links-item-link" href="">PRIVACY</a>
     </li>
    </ul>
-   <span class="footer__copyright">Copyright © 2015 - Tajem Creative </span>
+   <span class="footer__copyright">Copyright © 2015 - Tajem Creative</span>
   </div>
  </footer>
 </template>
@@ -86,7 +86,6 @@
 <style scoped lang="scss">
 @use '/src/assets/utils/functions.scss' as *;
 @use '/src/assets/mixins/links.scss' as *;
-@use '/src/assets/mixins/link-button.scss' as *;
 .footer {
  background: linear-gradient(180deg, rgba(49, 29, 94, 0.85) 0%, rgba(9, 5, 47, 0.85) 100%),
   url('/footer/background.png');

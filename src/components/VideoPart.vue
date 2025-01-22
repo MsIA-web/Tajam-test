@@ -23,8 +23,8 @@ const openModal = () => (isModalOpen.value = true)
       fill="currentColor"
      />
     </svg>
+    <span class="video__button-text">WATCH OUR STORY</span>
    </button>
-   <span class="video__button-text">WATCH OUR STORY</span>
   </div>
   <teleport to="body">
    <VideoModal :isOpen="isModalOpen" @closeModal="isModalOpen = false" />
@@ -35,7 +35,6 @@ const openModal = () => (isModalOpen.value = true)
 <style scoped lang="scss">
 @use '../assets/utils/functions' as *;
 @use '../assets/mixins/links' as *;
-@use '../assets/mixins/link-button' as *;
 
 .video {
  background: linear-gradient(180deg, rgba(49, 29, 94, 0.85) 0%, rgba(9, 5, 47, 0.85) 100%),
@@ -53,12 +52,17 @@ const openModal = () => (isModalOpen.value = true)
  flex-direction: column;
  align-items: center;
 }
+.video__button {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ @include simple-link;
+}
 .video__button-icon {
  max-width: rem(97);
  max-height: rem(97);
  cursor: pointer;
  color: white;
- @include simple-link;
 }
 .video__button-text {
  font-weight: 900;
@@ -68,7 +72,7 @@ const openModal = () => (isModalOpen.value = true)
  margin-top: rem(24);
 }
 @media (pointer: coarse) {
- .video__button-icon {
+ .video__button {
   @include touch;
   &:hover {
    pointer-events: none;

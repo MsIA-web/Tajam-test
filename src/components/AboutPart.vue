@@ -25,7 +25,6 @@
 <style scoped lang="scss">
 @use '../assets/utils/functions' as *;
 @use '../assets/mixins/links' as *;
-@use '../assets/mixins/link-button' as *;
 .about {
  min-height: rem(399);
  display: flex;

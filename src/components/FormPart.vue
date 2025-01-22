@@ -189,7 +189,6 @@ onBeforeUnmount(() => {
 <style scoped lang="scss">
 @use '../assets/utils/functions' as *;
 @use '../assets/mixins/links' as *;
-@use '../assets/mixins/link-button' as *;
 .form {
  display: flex;
  flex-direction: column;

@@ -52,7 +52,6 @@ const teamsCartArray = ref([
 <style scoped lang="scss">
 @use '/src/assets/utils/functions.scss' as *;
 @use '/src/assets/mixins/links.scss' as *;
-@use '/src/assets/mixins/link-button.scss' as *;
 
 .teams {
  background: linear-gradient(180deg, rgba(49, 29, 94, 0.85) 0%, rgba(9, 5, 47, 0.85) 100%),
